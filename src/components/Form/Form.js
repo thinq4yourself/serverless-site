@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react'
 import AutoForm from 'react-auto-form'
+import styles from './Form.css'
 
 
 function fixScroll(){
@@ -36,7 +37,7 @@ export default class Form extends React.Component {
     const { onSubmit, id, onChange, trimOnSubmit, children } = this.props
     return (
       <div ref={(node) => { this.node = node }}>
-        <AutoForm ref='form' id={id} className='form-node' trimOnSubmit={trimOnSubmit} onChange={onChange} onSubmit={this.handleSubmit}>
+        <AutoForm ref='form' id={id} className={styles.formNode} trimOnSubmit={trimOnSubmit} onChange={onChange} onSubmit={this.handleSubmit}>
           {children}
         </AutoForm>
       </div>

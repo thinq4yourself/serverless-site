@@ -4,6 +4,7 @@
     max-width: 1200px;
     margin: 0px auto;
     padding: 40px 5%;
+    position: relative;
   }
 }
 
@@ -202,7 +203,7 @@
     max-width: 200px;
     text-align: center;
     flex: 1;
-    margin: 20px auto 10px;
+    margin: 20px auto 5px;
   }
 
   .features {
@@ -428,13 +429,11 @@
       > :nth-child(1) {
         font-size: 32px;
         padding: 26px 0px 15px 0px;
-        padding-left: 20px;
       }
     }
     div:nth-child(3) {
       margin-top: 10px;
       line-height: 1.5em;
-      padding-left: 20px;
     }
   }
 
@@ -462,12 +461,14 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #fd5750;
-  border: 1px solid #fd5750;
-  color: #fff;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  width: 70%;
+  a {
+    width: 80%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #fd5750;
+    border: 1px solid #fd5750;
+    color: #fff;
+  }
 }
 
 .trustedBy {
@@ -488,7 +489,8 @@
   flex-direction: row;
   margin: 30px auto 10em;
   text-align: center;
-  width: 1088px;
+  max-width: 1288px;
+  width: 100%;
   :nth-child(3) {
     :nth-child(1) {
       margin-top: 16px;

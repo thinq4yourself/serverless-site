@@ -3,6 +3,7 @@
 }
 .page {
   max-width: 96rem;
+  height:100%;
   margin: 8rem auto 0 auto;
   font-family: Gibson, Avenir, sans-serif;
   line-height: 1.6;
@@ -22,6 +23,7 @@
 }
 .fullWidth {
   width: 100%;
+  position: relative;
 }
 
 .hero {

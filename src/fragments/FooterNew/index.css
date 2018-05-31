@@ -1,0 +1,132 @@
+.footer {
+  position: relative;
+  padding-top: 26rem;
+  padding-bottom: 5rem;
+  font-size: 1.4rem;
+  color: $white;
+  background-color: $black1;
+  z-index: 5;
+  ;
+
+  .bound {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 140rem;
+    margin: auto 3.7rem;
+  }
+  a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #8C8C8C;
+  }
+  a:hover{
+    color: #fff;
+  
+  }
+  h4 {
+    font-size: 16px;
+  }
+}
+.navBlocks {
+  margin: auto;
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+}
+.navBlock {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin-bottom: 3rem;
+
+  a {
+    display: block;
+    line-height: 2rem;
+    margin-bottom: .9rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 20%;
+  }
+}
+
+.navBlock {
+  color: #fff;
+  line-height: 1.9rem;
+}
+
+.ctaBlock {
+  width: 40rem;
+  margin: 0 11rem auto 4rem;
+}
+.madeStatement {
+  color: #8C8C8C;
+  max-width: 60%;
+}
+.bound {
+  composes: bound from "../../index.css";
+}
+
+.logoContainer {
+  margin: 2rem 13rem 10rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  min-width: 18rem;
+  margin-right: 20px;
+}
+
+.logoText {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  font-family: Serverless, monospace;
+}
+
+.form {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  div {
+    width: 100%;
+  }
+}
+
+.fieldSet {
+  flex: 1;
+}
+
+.input {
+  background-color: #444;
+  border: solid 1px #444;
+}
+.submit {
+  flex: 0 0 123px;
+}
+
+.success {
+  color: green;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.privacy {
+  color: #8C8C8C;
+  span {
+    margin-right: 10rem;
+  }
+  > :last-child {
+    margin-left: 2rem;
+  }
+}

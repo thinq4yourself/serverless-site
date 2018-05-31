@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import GoogleAnalytics from './GoogleAnalytics'
 import CustomerIO from './CustomerIO'
+import Sumo from './Sumo'
 
 export default function GlobalScripts(props) {
   let HubSpotScript
@@ -20,6 +21,7 @@ export default function GlobalScripts(props) {
       <GoogleAnalytics {...props} />
       {HubSpotScript}
       <div dangerouslySetInnerHTML={{ __html: CustomerIO }} />
+      <div dangerouslySetInnerHTML={{ __html: Sumo }} />
     </div>
   )
 }

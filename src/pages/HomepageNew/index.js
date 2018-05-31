@@ -4,6 +4,7 @@ import Svg from 'react-svg-inline'
 import Default from '../../layouts/Default'
 import styles from './styles.css'
 import Glitch from '../../components/Glitch'
+import PlatformBetaCTA from '../../fragments/PlatformBetaCTA'
 import PreFooterNew from '../../fragments/PreFooterNew'
 import Testimonial from '../../fragments/Testimonial'
 import FeaturesBgSvg from '../../assets/images/home/features-bg.png'
@@ -101,9 +102,7 @@ const HomePageNewPage = (props) => {
           </div>
 
           <div className={ styles.callToAction }>
-            <a href='https://dashboard.serverless.com'>
-              <div>sign up</div>
-            </a>
+            <PlatformBetaCTA kind='red' text='sign up'/>
             <Link to='/enterprise'>
               <div>contact sales</div>
             </Link>
@@ -195,18 +194,18 @@ const HomePageNewPage = (props) => {
                 graphicUrl: `${ FrameworkSvg }`,
                 title: `Automatic Scaling`,
                 body: `Forget about provisioning & managing your server fleet. Serverless applications scale with demand.`,
-                url: ``
+                url: `/framework/`
               }, {
                 graphicUrl: `${ GatewaySvg }`,
                 title: `Pay-per-execution`,
-                body: `Never pay for idle. Serverless applications charge you only when they run the service.`,
-                url: ``
+                body: `Never pay for idle time. Serverless applications charge you only when they run the service.`,
+                url: `/enterprise/`
               }, {
                 graphicUrl: `${ DashboardSvg }`,
                 title: `Low Overhead`,
                 body: `Serverless teams prototype faster, get to market faster, and spend more time working on new ideas.`,
-                url: ``
-              }].map(({ graphicUrl, title, body }, i) => (
+                url: `/enterprise/`
+              }].map(({ graphicUrl, title, body, url }, i) => (
                 <div
                   className={ styles.feature }
                   key={ i }
@@ -217,9 +216,9 @@ const HomePageNewPage = (props) => {
                   </div>
                   <div>{ body }</div>
                   <div className={ styles.learnMore }>
-                  <a href='/learn'>
+                  <Link to={url}>
                     <span>learn more</span>
-                  </a>
+                  </Link>
                 </div>
                 </div>
               ))
@@ -251,7 +250,9 @@ const HomePageNewPage = (props) => {
             </div>
           </div>
         </div>
-        <PreFooterNew
+         <div style={{ width: '100%', height: '80px', marginTop: '120px', background: `url('${GlitchPng}')` }} />
+      </div>
+      <PreFooterNew
           heading={ `Next Steps` }
           full={ false }
           subheadings={[
@@ -260,20 +261,17 @@ const HomePageNewPage = (props) => {
           ]}
           links={[{
             external: true,
-            to: 'https://github.com/serverless/event-gateway-getting-started',
+            to: '/learn/use-cases',
             label: 'use cases'
           }, {
-            to: '/learn/event-gateway/',
+            to: '/learn/comparisons/',
             label: 'comparisons'
           }, {
             external: true,
-            to: 'https://github.com/serverless/event-gateway/tree/master/examples',
+            to: '/learn',
             label: 'case studies'
           }]}
         />
-         <div style={{ width: '100%', height: '80px', background: `url('${GlitchPng}')` }} />
-      </div>
-
     </Default>
   )
 }

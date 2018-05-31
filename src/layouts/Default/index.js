@@ -10,7 +10,7 @@ import Button from '../../components/Button'
 import Separator from '../../components/Separator'
 import Header from '../../fragments/Header'
 import Hero from '../../fragments/Hero'
-import Footer from '../../fragments/Footer'
+import Footer from '../../fragments/FooterNew'
 import styles from './Default.css'
 
 const propTypes = {
