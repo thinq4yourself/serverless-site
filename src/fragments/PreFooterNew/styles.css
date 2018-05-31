@@ -82,23 +82,36 @@
     }
 
 .links {
-  background-image: url('https://s3-us-west-2.amazonaws.com/assets.site.serverless.com/images/glitch-screen.png');
+  margin: 0 auto;
+  background-image: url('../../assets/images/glitch-pre-footer.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: #fd5750;
   a {
     display: block;
-    padding-top: 10px;
+    padding-top: 20px;
     &:first-child {
       padding-top: 0px;
     }
   }
 }
 
+.links div:first-child {
+  width: 280px;
+}
+
   .link {
+    font-weight: 700;
     width: 190px;
     text-align: center;
     padding: 8px 10px;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
+    transition: all 0.3s;
+  }
+
+  .link:hover {
+    border-color: #000;
+    color: #000;
+    transition: all 0.3s;
   }

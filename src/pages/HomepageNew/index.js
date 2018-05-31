@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import Svg from 'react-svg-inline'
 import Default from '../../layouts/Default'
+
 import styles from './styles.css'
 import Glitch from '../../components/Glitch'
 import PlatformBetaCTA from '../../fragments/PlatformBetaCTA'
@@ -103,9 +104,9 @@ const HomePageNewPage = (props) => {
 
           <div className={ styles.callToAction }>
             <PlatformBetaCTA kind='red' text='sign up'/>
-            <Link to='/enterprise'>
+            <a onClick={() => Intercom('showNewMessage', 'I would like to know all of the things.  🔮 😍')}>
               <div>contact sales</div>
-            </Link>
+            </a>
           </div>
 
         </div>
@@ -260,14 +261,15 @@ const HomePageNewPage = (props) => {
             `Or if you’re ready, follow our step-by-step guide to start building a Serverless Application with your favorite language.`
           ]}
           links={[{
-            external: true,
+            external: false,
             to: '/learn/use-cases',
             label: 'use cases'
           }, {
+            external: false,
             to: '/learn/comparisons/',
             label: 'comparisons'
           }, {
-            external: true,
+            external: false,
             to: '/learn',
             label: 'case studies'
           }]}

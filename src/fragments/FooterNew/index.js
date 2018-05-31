@@ -7,88 +7,11 @@ import TextInput from '../../components/TextInput'
 import Button from '../../components/Button'
 import styles from './index.css'
 import PlatformBetaCTA from '../PlatformBetaCTA'
+import Newsletter from '../Newsletter'
 
 const logo = process.env.LOGO
 
 export default class Footer extends Component {
-  static hasLoadingState = true
-  constructor(props, context) {
-    super(props, context)
-    this.state = {
-      loading: false,
-      error: false,
-      success: false,
-    }
-  }
-  onSubmit = (event, data) => {
-    event.preventDefault()
-    const formId = event.target.id
-
-    this.setState({
-      loading: true
-    })
-
-    const formData = {
-      formId: formId,
-      fields: data
-    }
-
-    // return false
-
-    formHandler(formData).then((res) => {
-      this.setState({
-        success: true,
-        loading: false
-      })
-    }).catch((e) => {
-      console.log('ERROR', e)
-      this.setState({
-        success: false,
-        loading: false,
-        error: e
-      })
-    })
-  }
-
-  renderForm() {
-    const { loading, success } = this.state
-    const formId = 'newsletter-signup'
-
-    if (success) {
-      track('site:footer_newsletter', {
-        category: 'Newsletter'})
-      return (
-        <div>
-          <p className={styles.thanks}>
-            Look out in your email for some awesome.
-          </p>
-        </div>
-      )
-
-    }
-
-    const buttonText = (loading) ? "thinking" : "sign up"
-
-    return (
-      <Form className={styles.form} id={formId} onSubmit={this.onSubmit} onChange={this.onChange} trimOnSubmit>
-        <div className={styles.fieldSet}>
-          <TextInput
-            name='email'
-            validation={'isEmail'}
-            placeholder='Email'
-            className={styles.input}
-            errorMessageClassName={styles.errorMessage}
-            required
-          />
-        </div>
-        <div className={styles.submit}>
-          <Button kind={'red'} style={{padding: '13px 23px'}}>
-            {buttonText}
-          </Button>
-        </div>
-      </Form>
-    )
-  }
   render() {
     const year = new Date().getFullYear()
 
@@ -155,7 +78,7 @@ export default class Footer extends Component {
             <div className={styles.ctaBlock}>
               <p className={styles.ctaText}>Join our newsletter and get the latest news about Serverless products and happenings. <br />#noSpamWePromise</p>
               <div className={styles.form}>
-                {this.renderForm()}
+                <Newsletter className={styles.stacked} red />
               </div>
             </div>
           </div>

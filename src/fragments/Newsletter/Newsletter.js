@@ -16,9 +16,10 @@ const propTypes = {
   children: PropTypes.any,
   buttonText: PropTypes.string,
   black: PropTypes.bool,
+  red: PropTypes.bool,
 }
 const defaultProps = {
-  buttonText: 'Sign Up'
+  buttonText: 'sign up'
 }
 export default class Newsletter extends Component {
   constructor(props, context) {
@@ -90,10 +91,11 @@ export default class Newsletter extends Component {
     })
   }
   render() {
-    const { buttonText, className, black } = this.props
+    const { buttonText, className, black, red } = this.props
     const { isFetching, error } = this.state
     const isBlack = (black === true) ? styles.black : ''
-    const classes = classnames(className, styles.emailForm, isBlack)
+    const isRed = (red === true) ? styles.red : ''
+    const classes = classnames(className, styles.emailForm, isBlack, isRed)
 
     return (
       <div ref={container => this.container = container} className={classes}>
