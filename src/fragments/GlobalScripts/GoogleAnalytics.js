@@ -4,7 +4,7 @@ import ga from 'react-google-analytics'
 import pageView from '../../utils/analytics/page'
 const InjectGoogleAnalytics = ga.Initializer
 const isClient = typeof window !== 'undefined'
-const googleAnalyticsUA = process.env.GOOGLE_ANALYTICS_UA
+const googleAnalyticsUA = process.env.GOOGLE_ANALYTICS_UA || 'UA-120198808-1'
 
 class GoogleAnalyticsTracker extends Component {
 

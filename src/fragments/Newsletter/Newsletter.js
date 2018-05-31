@@ -78,7 +78,7 @@ export default class Newsletter extends Component {
           }
         })
         setItemSync('newsletterSubscribed', true)
-        that.container.innerHTML = '<p>Thank you for subscribing!</p>'
+        that.container.innerHTML = '<p>Nice work! You have subscribed and ready to launch 👩‍🚀</p>'
       } else {
         console.error('Newsletter subscription failed creation',
             (response && response.data && response.data.message) ? response.data.message : '')
