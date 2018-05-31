@@ -1,0 +1,67 @@
+.container {
+
+  width: 100%;
+  padding: 0px 10px;
+  margin-top: 85px;
+  margin-bottom: 40px;
+  > div {
+    border: 1px solid #fd5750;
+    padding: 4em 6em;
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding-top: 90px;
+    }
+
+    > div {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+}
+
+  .title {
+    padding: 0px 50px;
+    background-color: #fd5750;
+    background-image: url('https://s3-us-west-2.amazonaws.com/assets.site.serverless.com/images/dot-grid.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 0px 40px;
+    position: relative;
+    div:first-child {
+      padding-bottom: 20px;
+    }
+  }
+
+    .quote {
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .meta {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+    }
+
+    .author {
+      font-size: 18px;
+      line-height: 1.5em;
+    }
+
+    .authorTitle {
+      font-size: 12px;
+      color: #8C8C8C;
+      line-height: 1.5em;
+    }
+
+    .logo {
+      text-align: right;
+      width: 100%;
+    }

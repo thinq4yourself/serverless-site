@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="606px" height="18px" viewBox="0 0 606 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 39</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF9088" stop-opacity="0.2" offset="0%"></stop>
+            <stop stop-color="#FD5750" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#FF9088" stop-opacity="0.2" offset="0%"></stop>
+            <stop stop-color="#FD5750" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="home" transform="translate(-497.000000, -2639.000000)">
+            <g id="Content" transform="translate(0.000000, 1265.000000)">
+                <g id="Content-Block-2" transform="translate(192.000000, 1089.000000)">
+                    <g id="3-col-content" transform="translate(0.000000, 185.000000)">
+                        <g id="Event-Gateway" transform="translate(305.000000, 30.000000)">
+                            <g id="Group-39" transform="translate(0.000000, 71.000000)">
+                                <path d="M1,0 L136.67321,0 L1,0 Z" id="Path-3-Copy-3" stroke="url(#linearGradient-1)" stroke-dasharray="2"></path>
+                                <path d="M451,0 L586.67321,0 L451,0 Z" id="Path-3-Copy-6" stroke="url(#linearGradient-1)" stroke-dasharray="2"></path>
+                                <path d="M1,8 L146.184603,8 L1,8 Z" id="Path-3-Copy-4" stroke="url(#linearGradient-2)" stroke-dasharray="1,2"></path>
+                                <path d="M451,8 L596.184603,8 L451,8 Z" id="Path-3-Copy-7" stroke="url(#linearGradient-2)" stroke-dasharray="1,2"></path>
+                                <path d="M0,16 L156.535156,16 L0,16 Z" id="Path-3-Copy-5" stroke="url(#linearGradient-2)" stroke-dasharray="4"></path>
+                                <path d="M450,16 L606.535156,16 L450,16 Z" id="Path-3-Copy-8" stroke="url(#linearGradient-2)" stroke-dasharray="4"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

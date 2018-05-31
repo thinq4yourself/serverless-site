@@ -3,7 +3,7 @@
  * Layout: Homepage
  */
 export { default as PageError } from './404'
-export { default as Homepage } from './Homepage'
+export { default as Homepage } from './HomepageNew'
 export { default as PageLoading } from './PageLoading'
 export { default as Partners } from './Partners'
 export { default as Team } from './Team'
