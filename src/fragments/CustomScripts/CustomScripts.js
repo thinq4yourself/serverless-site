@@ -8,7 +8,6 @@ export default function CustomScripts(head) {
   if (!head) {
     return null
   }
-  const Intercom = getIntercomScript(head)
   const Scripts = getExternalScripts(head)
   const InlineCSS = getInlineCSS(head)
   const InlineJS = getInlineJS(head)
@@ -17,7 +16,6 @@ export default function CustomScripts(head) {
       {Scripts}
       {InlineCSS}
       {InlineJS}
-      {Intercom}
     </div>
   )
 }
@@ -26,11 +24,6 @@ CustomScripts.propTypes = {
   children: PropTypes.any
 }
 
-function getIntercomScript(head) {
-  return (
-    <Helmet script={[{ src: 'https://loveisthemedicine.org/js/intercom.js', type: 'text/javascript' }]} />
-  )
-}
 function getExternalScripts(head) {
   /* if scripts field defined, inject it */
   if (head.scripts && typeof head.scripts === 'string') {

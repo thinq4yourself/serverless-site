@@ -24,6 +24,10 @@
       align-items: center;
       padding-top: 140px;
       padding-bottom: 140px;
+      @media (max-width: 580px) {
+        padding-top: 20px;
+        padding-bottom: 0;
+      }
     }
 
   }
@@ -69,6 +73,9 @@
     div:first-child {
       padding-bottom: 20px;
     }
+    @media (max-width: 580px) {
+      padding: 0px 30px;
+    }
   }
 
     .heading {
@@ -88,6 +95,9 @@
   background-size: cover;
   background-position: center;
   background-color: #fd5750;
+  @media (max-width: 580px) {
+    padding: 0 6px;
+  }
   a {
     display: block;
     padding-top: 20px;
@@ -100,6 +110,12 @@
 .links div:first-child {
   width: 280px;
 }
+
+@media (max-width: 580px) {
+  .links div:last-child {
+    padding: 1.3rem 0;
+  }
+ }
 
   .link {
     font-weight: 700;

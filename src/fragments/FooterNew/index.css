@@ -14,11 +14,15 @@
     flex-wrap: wrap;
     max-width: 140rem;
     margin: auto 3.7rem;
+    @media (max-width: 580px) {
+      margin: auto;
+     }
   }
   a {
     font-size: 14px;
     text-decoration: none;
     color: #8C8C8C;
+    display: inline-block;
   }
   a:hover{
     color: #fff;
@@ -33,13 +37,18 @@
   @media screen and (min-width: 768px) {
     width: 50%;
   }
+  @media (max-width: 580px) {
+    margin: 0 0 0 3.3rem;
+  }
 }
 .navBlock {
   display: inline-block;
   vertical-align: top;
   width: 100%;
   margin-bottom: 3rem;
-
+  @media (max-width: 580px) {
+    width: 50%;
+  }
   a {
     display: block;
     line-height: 2rem;
@@ -61,10 +70,16 @@
 .ctaBlock {
   width: 40rem;
   margin: 0 11rem auto 4rem;
+  @media (max-width: 580px) {
+    margin: 2rem 3rem auto 3.3rem;
+  }
 }
 .madeStatement {
   color: #8C8C8C;
   max-width: 60%;
+  @media (max-width: 580px) {
+    max-width: 95%;
+  }
 }
 .bound {
   composes: bound from "../../index.css";
@@ -72,6 +87,9 @@
 
 .logoContainer {
   margin: 2rem 13rem 10rem;
+  @media (max-width: 580px) {
+    margin: 2rem 10rem 5rem;
+   }
 }
 
 .logo {

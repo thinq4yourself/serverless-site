@@ -9,7 +9,9 @@
     padding: 4em 6em;
     display: flex;
     flex-direction: row;
-
+    @media (max-width: 580px) {
+      padding: 4em 3em;
+     }
     @media (max-width: 768px) {
       flex-direction: column;
       padding-top: 90px;
